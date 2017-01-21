@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="interactivemovie_suite">
+	
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	
+<!--  	<test name="createMovie">
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="createMovie"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>  -->
+
+  <test name="createGroup">
+	<parameter name="group_name" value="新建分组"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="createGroup"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test> 
+	
+	
+ 	<test name="editGroup">
+	<parameter name="group_name" value="编辑分组"></parameter>
+	<parameter name="new_group_name" value="编辑后分组"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="editGroup"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test> 
+	
+   <test name="deleteGroup">
+	<parameter name="group_name" value="删除分组"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="deleteGroup"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>  
+	
+	
+	<test name="previewMovie">
+	<parameter name="movie_name" value="预览电影"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="previewMovie"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	<test name="editMovie">
+	<parameter name="movie_name" value="编辑电影"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="editMovie"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	
+	<test name="applyAsTemplate">
+	<parameter name="movie_name" value="付费模板电影"></parameter>
+	<parameter name="template_type" value="教育,小学,英语"></parameter>
+	<parameter name="fee_type" value="收费,2.0"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="applyAsTemplate"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	 
+<test name="publishMovie">
+	<parameter name="movie_name" value="发布电影"></parameter>
+	<parameter name="movie_type" value="教育,小学,英语"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="publishMovie"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+<test name="deleteMovie">
+	<parameter name="movie_name" value="删除电影"></parameter>
+	
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="deleteMovie"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	
+	<test name="copyMovie">
+	<parameter name="movie_name" value="复制电影"></parameter>
+	
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="copyMovie"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	<test name="groupMovie">
+	<parameter name="movie_name" value="分组电影"></parameter>
+	<parameter name="group_name" value="教育"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="groupMovie"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	
+	<!-- export_way："导出播放文件","导出播放代码","导出图片漫画","导出文本文档"
+	 	 分别对应到 export_code: 1,2,3,4 -->
+	
+	<test name="exportMovie1">
+		<parameter name="movie_name" value="导出电影"></parameter>
+		<parameter name="export_way" value="导出播放文件"></parameter>
+		<parameter name="export_code" value="1"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="exportMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="exportMovie2">
+		<parameter name="movie_name" value="导出电影"></parameter>
+		<parameter name="export_way" value="导出播放代码"></parameter>
+		<parameter name="export_code" value="2"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="exportMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="exportMovie3">
+		<parameter name="movie_name" value="导出电影"></parameter>
+		<parameter name="export_way" value="导出图片漫画"></parameter>
+		<parameter name="export_code" value="3"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="exportMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="exportMovie4">
+		<parameter name="movie_name" value="导出电影"></parameter>
+		<parameter name="export_way" value="导出文本文档"></parameter>
+		<parameter name="export_code" value="4"></parameter>
+		<classes>
+			<class name="com.yoya.test.InteractiveMovieTest">
+				<methods>
+					<include name="exportMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+</suite> 

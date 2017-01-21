@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login" preserve-order="true">
+ 	<test name="login_with_tel">
+		 
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">	
+				<methods>
+				  		 <parameter name="user_name" value="18250890422"></parameter>
+						<parameter name="pass_word" value="123456"></parameter>
+						<parameter name="nick_name" value="jackylee"></parameter>
+						
+					 <include name="loginYoya">
+					     
+					 </include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+  <test name="login_with_email">
+		
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">	
+				<methods>
+				<parameter name="user_name" value="1908926708@qq.com"></parameter>
+				<parameter name="pass_word" value="123456"></parameter>
+				<parameter name="nick_name" value="jackylee"></parameter>
+				
+				 <include name="loginYoya">
+				
+				 </include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	 
+	<test name="login_with_username">
+		<parameter name="user_name" value="lntest1"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="nick_name" value="jackylee"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">	
+				<methods>
+					 <include name="loginYoya"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	 
+	
+	 <test name="login_wrong_user">
+		<parameter name="user_name" value="wrong_user"></parameter>
+		<parameter name="pass_word" value="wrong_password"></parameter>
+		<parameter name="assert_string" value="您输入的用户不存在，请重新输入。或者您可以"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">
+				<methods>
+					 <include name="loginYoyaUserNotExist"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	
+	
+ 	<test name="login_via_non_password">
+		<parameter name="user_name" value="lntest1"></parameter>
+		<parameter name="pass_word" value=""></parameter>
+		<parameter name="assert_string" value="登录密码不能为空"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">
+				<methods>
+					  <include name="loginYoyaViaNonPassword">					 
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	
+
+	
+	<test name="login_Via_AllNon" preserve-order="true" allow-return-values="true">
+		<parameter name="assert_user" value="用户名不能为空"></parameter>
+		<parameter name="assert_password" value="登录密码不能为空"></parameter>	
+		<classes>
+			<class name="com.yoya.test.login.LoginTest" >			
+				<methods >
+					<include name="loginYoyaViaAllNon"></include>											
+				</methods>
+			</class>
+		
+		</classes>
+	</test> 
+	
+	
+
+	
+	<test name="login_Via_Non_Username">
+		<parameter name="null_user_name" value=""></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="assert_string" value="用户名不能为空"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">
+				<methods>
+	
+					<include name="loginYoyaViaNonUsername">
+					 			
+					</include> 
+				</methods>
+			</class>
+		
+		</classes>
+	
+	</test>  
+	
+	
+	
+	<!-- 密码错误5次最后被锁定-->
+	<test name="login_via_wrong_password">
+		<parameter name="user_name" value="lntest1"></parameter>
+		<parameter name="pass_word" value="wrongpassword"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">
+				
+				<methods>
+					<include name="loginYoyaViaWrPassword"></include>
+				</methods>
+			</class>
+		</classes>
+	
+	</test> 
+	
+	<!-- 退出登录 -->
+	 <test name="logoutYoya">
+		<parameter name="user_name" value="xsjtest24"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.LoginTest">
+				<methods>
+					 <include name="logoutYoya"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	
+	
+</suite>

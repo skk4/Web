@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- 测试环境没有提供第三方登录，所以该配置文件失效，不使用 -->
+<!-- 
+<suite name="otherlogin">
+	<parameter name="web_driver" value="FirefoxDriver"></parameter>
+	<parameter name="host_url" value="http://www.yoya.com/"></parameter>
+	<test name="qq_login">
+		<classes>
+			<class name="com.yoya.test.OtherLoginTest">
+				<methods>
+					<include name="other_login_QQ"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	 <test name="wechat_login">
+
+		<classes>
+			<class name="com.yoya.test.OtherLoginTest">
+				<methods>
+					<include name="other_login_Wechat"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="sina_login">
+		<classes>
+			<class name="com.yoya.test.OtherLoginTest">
+				<methods>
+					<include name="other_login_Sina"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+ -->

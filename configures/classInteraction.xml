@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="suite" preserve-order="true">
+	
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	
+	<!-- 创建课堂 -->
+	<test name="createdClassInteraction">
+	   <classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="createdClassInteraction"></include>
+				</methods>
+			</class>
+		</classes> 
+	    
+	</test>
+	
+	<!-- 编辑课堂 -->
+	<test name="editCreatedInteractionClass">
+	   <classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="editCreatedInteractionClass"></include>
+				</methods>
+			</class>
+		</classes> 
+	    
+	</test>
+	
+	<!-- 删除课堂 -->
+	<test name="deleteCreatedInteractionClass">
+	   <classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="deleteCreatedInteractionClass"></include>
+				</methods>
+			</class>
+		</classes> 
+	    
+	</test>
+	
+	
+	
+	
+	
+<test name="signIn">
+	<parameter name="class_name" value="classinteraction"></parameter>
+	<parameter name="class_date" value="今日"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="signIn"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  
+	
+<test name="question">
+	<parameter name="class_name" value="classinteraction"></parameter>
+	<parameter name="class_date" value="今日"></parameter>
+	<parameter name="tk_name" value="互动课堂"></parameter>
+	<parameter name="chapter_name" value="第一章"></parameter>
+	<parameter name="section_name" value="第一节"></parameter>
+	<parameter name="question_title" value="一年有多少个季度"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="question"></include>
+				</methods>
+			</class>
+		</classes>
+	
+	</test>	
+	
+	
+ <test name="quiz">
+	<parameter name="class_name" value="classinteraction"></parameter>
+	<parameter name="class_date" value="今日"></parameter>
+	<parameter name="cy_title" value="课中小结"></parameter>
+	<parameter name="tk_name" value="互动课堂"></parameter>
+	<parameter name="chapter_name" value="第一章"></parameter>
+	<parameter name="section_name" value="第一节"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="quiz"></include>
+				</methods>
+			</class>
+		</classes>
+	
+	</test>	
+	
+	
+	
+ <test name="vote">
+	<parameter name="class_name" value="classinteraction"></parameter>
+	<parameter name="class_date" value="今日"></parameter>
+	<parameter name="tp_title" value="英文有多少个字母？"></parameter>
+	<parameter name="tp_choices" value="25;26;27;28"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="vote"></include>
+				</methods>
+			</class>
+		</classes>
+	
+	</test>  
+	
+ <test name="signOut">
+	<parameter name="class_name" value="classinteraction"></parameter>
+	<parameter name="class_date" value="今日"></parameter>
+	
+		<classes>
+			<class name="com.yoya.test.classes.ClassInteractionTest">
+				<methods>
+					<include name="signOut"></include>
+				</methods>
+			</class>
+		</classes>
+	
+	</test>  
+	
+	
+	
+</suite> 

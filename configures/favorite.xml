@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="favorite" >
+    <parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+ 
+	
+	<test name="play">
+    <classes>
+      <class name="com.yoya.test.favorite.FavoriteTest">
+     	   <methods>
+     	       <parameter name="movie_name" value="发布电影"></parameter>
+     	       <include name="play"></include>
+     	   </methods>  
+          
+     </class>
+    </classes>
+  </test>   
+  
+<test name="cancelFavorite">
+    <classes>
+      <class name="com.yoya.test.favorite.FavoriteTest">
+     	   <methods>
+     	       <parameter name="movie_name" value="产品6"></parameter>
+     	       <include name="cancelFavorite"></include>
+     	   </methods>  
+          
+     </class>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

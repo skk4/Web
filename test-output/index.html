@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-teacherdetail">
+              <span class="suite-name border-failed">teacherdetail</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-teacherdetail">
+                    <span>E:\workspace\YoyaWebTestSVN\configures\teacherdetail.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-teacherdetail">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-teacherdetail">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-teacherdetail">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-teacherdetail">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-teacherdetail">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-teacherdetail">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-teacherdetail" class="hide-methods failed suite-teacherdetail"> (hide)</a> <!-- hide-methods failed suite-teacherdetail -->
+                      <a href="#" panel-name="suite-teacherdetail" class="show-methods failed suite-teacherdetail"> (show)</a> <!-- show-methods failed suite-teacherdetail -->
+                    </span>
+                    <div class="method-list-content failed suite-teacherdetail">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-teacherdetail" title="com.yoya.test.accountset.TeacherProfileTest" hash-for-method="improveTeacherInfo(F:\\WebAutomation\\race_car.jpg, 李小琳, 350322199010101212, 18205990013, 123456789, yoya, 福建省, 厦门市, 小学...)">improveTeacherInfo(F:\\WebAutomation\\race_car.jpg, 李小琳, 350322199010101212, 18205990013, 123456789, yoya, 福建省, 厦门市, 小学...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-teacherdetail -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suites" class="panel suites">
+        </div> <!-- panel suites -->
+        <div panel-name="suite-teacherdetail" class="panel teacherdetail">
+          <div class="suite-teacherdetail-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.yoya.test.accountset.TeacherProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="improveTeacherInfo(F:\\WebAutomation\\race_car.jpg, 李小琳, 350322199010101212, 18205990013, 123456789, yoya, 福建省, 厦门市, 小学...)">
+                  </a> <!-- improveTeacherInfo(F:\\WebAutomation\\race_car.jpg, 李小琳, 350322199010101212, 18205990013, 123456789, yoya, 福建省, 厦门市, 小学...) -->
+                  <span class="method-name">improveTeacherInfo</span>
+                  <span class="parameters">(F:\\WebAutomation\\race_car.jpg, 李小琳, 350322199010101212, 18205990013, 123456789, yoya, 福建省, 厦门市, 小学音乐, 小学教师, F:\\WebAutomation\\1.jpg, F:\\WebAutomation\\2.png)</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Command duration or timeout: 10.12 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E2RVPM6&apos;, ip: &apos;192.168.248.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 71faa656-a29a-4ecf-bb83-db6d4a56fbe7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at com.yoya.test.accountset.TeacherProfileTest.improveTeacherInfo(TeacherProfileTest.java:70)
+Caused by: org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E2RVPM6&apos;, ip: &apos;192.168.248.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.enabled(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10098)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-teacherdetail-class-failed -->
+        </div> <!-- panel teacherdetail -->
+        <div panel-name="test-xml-suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\workspace\YoyaWebTestSVN\configures\AllSuites.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;suites&quot;&gt;
+  &lt;parameter name=&quot;web_driver&quot; value=&quot;Firefox&quot;/&gt;
+  &lt;parameter name=&quot;host_url&quot; value=&quot;http://test.yoya.com/&quot;/&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./configures/teacherdetail.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- suites --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-teacherdetail" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\workspace\YoyaWebTestSVN\configures\teacherdetail.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;teacherdetail&quot;&gt;
+  &lt;parameter name=&quot;web_driver&quot; value=&quot;Firefox&quot;/&gt;
+  &lt;parameter name=&quot;host_url&quot; value=&quot;http://test.yoya.com/&quot;/&gt;
+  &lt;parameter name=&quot;user_name&quot; value=&quot;lntest2&quot;/&gt;
+  &lt;parameter name=&quot;pass_word&quot; value=&quot;123456&quot;/&gt;
+  &lt;test name=&quot;improveTeacherInfo&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.yoya.test.accountset.TeacherProfileTest&quot;&gt;
+        &lt;parameter name=&quot;city&quot; value=&quot;厦门市&quot;/&gt;
+        &lt;parameter name=&quot;real_name&quot; value=&quot;李小琳&quot;/&gt;
+        &lt;parameter name=&quot;capa_url&quot; value=&quot;F:\\WebAutomation\\2.png&quot;/&gt;
+        &lt;parameter name=&quot;tea_desc&quot; value=&quot;123456789&quot;/&gt;
+        &lt;parameter name=&quot;tea_company&quot; value=&quot;yoya&quot;/&gt;
+        &lt;parameter name=&quot;course_type&quot; value=&quot;小学音乐&quot;/&gt;
+        &lt;parameter name=&quot;province&quot; value=&quot;福建省&quot;/&gt;
+        &lt;parameter name=&quot;user_id&quot; value=&quot;350322199010101212&quot;/&gt;
+        &lt;parameter name=&quot;tel_no&quot; value=&quot;18205990013&quot;/&gt;
+        &lt;parameter name=&quot;pos_cert_url&quot; value=&quot;F:\\WebAutomation\\1.jpg&quot;/&gt;
+        &lt;parameter name=&quot;tea_position&quot; value=&quot;小学教师&quot;/&gt;
+        &lt;parameter name=&quot;head_img_url&quot; value=&quot;F:\\WebAutomation\\race_car.jpg&quot;/&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;improveTeacherInfo&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.yoya.test.accountset.TeacherProfileTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- improveTeacherInfo --&gt;
+&lt;/suite&gt; &lt;!-- teacherdetail --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-teacherdetail" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for teacherdetail</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">improveTeacherInfo (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-teacherdetail" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for teacherdetail</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suites');
+function tableData_suites() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['suites']= { tableData: data, tableDiv: 'times-div-suites'}
+return data;
+}
+              </script>
+              <div id="times-div-suites">
+              </div> <!-- times-div-suites -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-teacherdetail" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for teacherdetail</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_teacherdetail');
+function tableData_teacherdetail() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'improveTeacherInfo')
+data.setCell(0, 2, 'com.yoya.test.accountset.TeacherProfileTest')
+data.setCell(0, 3, 28614);
+window.suiteTableData['teacherdetail']= { tableData: data, tableDiv: 'times-div-teacherdetail'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <div id="times-div-teacherdetail">
+              </div> <!-- times-div-teacherdetail -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-teacherdetail" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for teacherdetail</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-teacherdetail" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-teacherdetail" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yoya.test.accountset.TeacherProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(Firefox, http://test.yoya.com/, lntest2, 123456)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">improveTeacherInfo(F:\\WebAutomation\\race_car.jpg, 李小琳, 350322199010101212, 18205990013, 123456789, yoya, 福建省, 厦门市, 小学...)</span>
+                <span class="method-start">40164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">68808 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

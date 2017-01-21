@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suites" preserve-order="true">
+     <parameter name="web_driver" value="firefox"></parameter>
+    <parameter name="host_url" value="http://www.yoya_auto.com/"></parameter> 
+
+    <suite-files>
+         <suite-file path="./configures/myorder.xml"></suite-file>
+   		<!-- <suite-file path="./configures/tk.xml"></suite-file> -->
+        <!--  <suite-file path="./configures/login.xml"></suite-file>
+         <suite-file path="./configures/register.xml"></suite-file> 
+        <suite-file path="./configures/myyoya.xml"></suite-file>
+        <suite-file path="./configures/feedback.xml"></suite-file>
+         <suite-file path="./configures/message.xml"></suite-file>
+          <suite-file path="./configures/personaldetails.xml"></suite-file>
+    	<suite-file path="./configures/securitycenter.xml"></suite-file>
+    	<suite-file path="./configures/mycourse.xml"></suite-file>
+    	 <suite-file path="./configures/kcb.xml"></suite-file>
+    	<suite-file path="./configures/stk.xml"></suite-file>
+    	<suite-file path="./configures/myorder.xml"></suite-file>
+    	<suite-file path="./configures/startVIP.xml"></suite-file>  -->
+    </suite-files>
+</suite>

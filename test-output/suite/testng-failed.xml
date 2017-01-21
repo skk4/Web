@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite]">
+  <parameter name="web_driver" value="Firefox"/>
+  <parameter name="host_url" value="http://test.yoya.com/"/>
+  <test name="login_with_tel(failed)">
+    <classes>
+      <class name="com.yoya.test.LoginTest">
+        <parameter name="user_name" value="18205990013"/>
+        <parameter name="pass_word" value="123456"/>
+        <methods>
+          <include name="loginYoya"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.yoya.test.LoginTest -->
+    </classes>
+  </test> <!-- login_with_tel(failed) -->
+</suite> <!-- Failed suite [suite] -->

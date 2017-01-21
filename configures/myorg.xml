@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="organization">
+	
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	
+	<test name="myorganization">
+		<parameter name="org_name" value="用户学院"></parameter>
+		<parameter name="org_id" value="yyyhxy"></parameter>
+		<classes>
+			<class name="com.yoya.test.MyOrganizationTest">
+				<methods>
+					<include name="enterMyJoinedOrg"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	<test name="joinOrganization">
+		
+		<classes>
+			<class name="com.yoya.test.MyOrganizationTest">
+				<methods>
+				    <parameter name="invite_code" value=""></parameter>
+					<parameter name="org_name" value=""></parameter>
+					<parameter name="your_name" value=""></parameter>
+					<parameter name="mobile_number" value=""></parameter>
+					<parameter name="verify_code" value=""></parameter>
+					<include name="joinOrganization"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	
+</suite> <!-- Suite -->

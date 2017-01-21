@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="myyoya" preserve-order="true">
+	
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+
+	<test name="myyoyatest">
+		<classes>
+			<class name="com.yoya.test.MyYoyaTest">
+				<methods>
+				    <!-- 按从主站上到下，左到右验证 -->
+					<include name="logoVerify"></include>
+					<include name="menuSiteVerify"></include>
+					<include name="menuUserAppVerify"></include>
+					<include name="menuUserHelpVerify"></include>
+					<include name="menuUserMessageVerify"></include>
+					<include name="menuUserVerify"></include>
+					
+					<include name="userInfoVerify"></include>
+					<include name="itemListVerify"></include>
+					<include name="hddyElementsExist"></include>
+					<include name="my_course"></include>
+					<include name="kcbElementsExist"></include>
+					<include name="stkElementsExist"></include>
+					
+					<include name="wdypElementsExist"></include>
+					<include name="wdddElementsExist"></include>
+					<include name="wdjgElementsExist"></include>
+					
+					<include name="myVIP"></include>
+					
+					<include name="aboutYoya"></include>
+					<include name="coroperation"></include>
+					<include name="helpCenter"></include>
+					<include name="customService"></include>
+					<include name="joinWechat"></include>
+					<include name="websiteFooter"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

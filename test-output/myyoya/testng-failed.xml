@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [myyoya]">
+  <parameter name="web_driver" value="Firefox"/>
+  <parameter name="host_url" value="http://test.yoya.com/"/>
+  <parameter name="user_name" value="lntest1"/>
+  <parameter name="pass_word" value="123456"/>
+  <test name="checkUserinformations(failed)">
+    <classes>
+      <class name="com.yoya.test.MyYoyaTest">
+        <parameter name="moive_num" value="30"/>
+        <parameter name="class_num" value="1"/>
+        <parameter name="org_num" value="0"/>
+        <parameter name="fav_num" value="0"/>
+        <methods>
+          <include name="checkUserinformations" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.yoya.test.MyYoyaTest -->
+    </classes>
+  </test> <!-- checkUserinformations(failed) -->
+</suite> <!-- Failed suite [myyoya] -->

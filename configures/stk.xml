@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="STK" preserve-order="true" allow-return-values="true">
+
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	<!-- 创建分类 -->
+	<test name="createclassification">
+		<parameter name="classification" value="新建分类"></parameter>
+		<classes>
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="createFenLei"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="editclassification">
+
+		<parameter name="classify" value="编辑分类"></parameter>
+		<parameter name="new_classify" value="编辑后分类"></parameter>
+		<classes>
+
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="editFenLei"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+
+	<test name="deleteclassification">
+		<parameter name="classify_name" value="删除分类"></parameter>
+		<classes>
+
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="deleteFenLei"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+
+	<!-- 创建题库 -->
+	<test name="createTK">
+		<parameter name="TK_name" value="新题库名"></parameter>
+		<parameter name="TK_type" value="题库分类"></parameter>
+		<classes>
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="createTK"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<!-- 预览题库 -->
+	<test name="previewTK">
+		<parameter name="tk_name" value="预览题库"></parameter>
+		<classes>
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="previewTK"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+	
+	<!-- 编辑题库名称 -->
+	<test name="editTK">
+		<parameter name="tk_name" value="编辑题库"></parameter>
+		<parameter name="new_tk_name" value="编辑后题库"></parameter>
+		<classes>
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="editTK"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<!-- 删除题库 -->
+	<test name="deleteTK">
+		<parameter name="tk_name" value="删除题库"></parameter>
+		<classes>
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="deleteTK"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<!-- 进入题库 -->
+	<test name="enterTK">
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<classes>
+			<class name="com.yoya.test.STKTest">
+				<methods>
+					<include name="enterTK"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

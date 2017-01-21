@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="YoyaWebTest" default="start_server_and_run_tests" basedir=".">
+	<property name="src" value="src" />
+	<property name="dest" value="classes" />
+	<property name="lib.dir" value="${basedir}/lib" />
+	<property name="suite.dir" value="${basedir}/configures" />
+	<path id="compile.path">
+		<fileset dir="${lib.dir}/">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement location="${src}" />
+		<pathelement location="${dest}" />
+	</path>
+	<target name="init">
+		<mkdir dir="${dest}" />
+	</target>
+	<target name="compile" depends="init" >
+		<javac srcdir="${src}" destdir="${dest}" classpathref="compile.path" includeAntRuntime="false" encoding="UTF-8"/>
+	</target>
+	<!--run testng ant task-->
+	<taskdef resource="testngtasks" classpath="${lib.dir}/selenium-server-standalone-2.53.0.jar" />
+
+	<target name="start_server_and_run_tests"  description="start selenium server and run tests">
+			<antcall target="run_tests">
+			</antcall>
+	</target>
+
+	<target name="run_tests" depends="compile">
+		<testng classpathref="compile.path" failureproperty="test.failed" outputdir="${basedir}/test-output">
+			<!--xml test suite files -->
+			<xmlfileset dir="${suite.dir}">	
+				<include name="AllSuites.xml"></include>
+			</xmlfileset>
+		</testng>
+		<antcall target="deleteClasses"></antcall>
+		<fail message="ERROR: test failed!!!!!" if="test.failed" />
+	</target>
+	
+	<target name="deleteClasses">
+		<delete dir="${dest}"/>
+		<antcall target="SendReportAndTransform"/>
+	</target>
+	<target name="SendReportAndTransform">
+		<xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/test-output/testng-results.xsl" 
+			out="${basedir}/test-output/indexSaxon.html" classpathref="compile.path">
+		<!-- you need to specify the directory here again -->
+		<param name="testNgXslt.outputDir" expression="${basedir}/test-output/"/>
+		<param name="testNgXslt.showRuntimeTotals" expression="true"/>
+		
+		</xslt>
+	</target>
+</project>

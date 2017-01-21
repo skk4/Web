@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="suites" duration-ms="0" started-at="2016-07-20T03:34:55Z" finished-at="2016-07-20T03:34:55Z">
+    <groups>
+    </groups>
+  </suite> <!-- suites -->
+  <suite name="teacherdetail" duration-ms="73820" started-at="2016-07-20T03:33:41Z" finished-at="2016-07-20T03:34:55Z">
+    <groups>
+    </groups>
+    <test name="improveTeacherInfo" duration-ms="73820" started-at="2016-07-20T03:33:41Z" finished-at="2016-07-20T03:34:55Z">
+      <class name="com.yoya.test.accountset.TeacherProfileTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yoya.test.accountset.TeacherProfileTest@1810399e]" name="beforeTest" is-config="true" duration-ms="40164" started-at="2016-07-20T11:33:41Z" finished-at="2016-07-20T11:34:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://test.yoya.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lntest2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="improveTeacherInfo(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yoya.test.accountset.TeacherProfileTest@1810399e]" name="improveTeacherInfo" duration-ms="28614" started-at="2016-07-20T11:34:21Z" finished-at="2016-07-20T11:34:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[F:\\WebAutomation\\race_car.jpg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[李小琳]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[350322199010101212]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18205990013]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[yoya]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[福建省]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[厦门市]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[小学音乐]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[小学教师]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[F:\\WebAutomation\\1.jpg]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[F:\\WebAutomation\\2.png]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[Element is disabled and so may not be used for actions
+Command duration or timeout: 10.12 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'DESKTOP-E2RVPM6', ip: '192.168.248.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 71faa656-a29a-4ecf-bb83-db6d4a56fbe7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Command duration or timeout: 10.12 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'DESKTOP-E2RVPM6', ip: '192.168.248.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 71faa656-a29a-4ecf-bb83-db6d4a56fbe7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at com.yoya.test.accountset.TeacherProfileTest.improveTeacherInfo(TeacherProfileTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'DESKTOP-E2RVPM6', ip: '192.168.248.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.enabled(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10098)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5070946428693099985webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- improveTeacherInfo -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.yoya.test.accountset.TeacherProfileTest@1810399e]" name="afterTest" is-config="true" duration-ms="5012" started-at="2016-07-20T11:34:50Z" finished-at="2016-07-20T11:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.yoya.test.accountset.TeacherProfileTest -->
+    </test> <!-- improveTeacherInfo -->
+  </suite> <!-- teacherdetail -->
+</testng-results>

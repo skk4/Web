@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="yun_suite" preserve-order="true">
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	<!-- 以下是我的文件 -->
+	<test name="createFileDir">
+		<parameter name="filedir_name" value="newfiledir"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="createFileDir"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="deleteFiledirFromHiddenButton">
+		<parameter name="filedir_name_delete" value="ForDelete"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="deleteFiledirFromHiddenButton"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="editFiledirFromHiddenButton">
+		<parameter name="old_filedir_name" value="ForEdit"></parameter>
+		<parameter name="new_filedir_name" value="Neweditname"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="editFiledirFromHiddenButton"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="uploadResource">
+		<parameter name="resource_url" value="F:\\WebAutomation\\questionModel.doc"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="uploadResource"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="downloadFileFromHidden">
+		<parameter name="resource_url" value="chapterModel.doc"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="downloadFileFromHidden"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="deleteFileFromHidden">
+		<parameter name="file_name_delete" value="word_model.doc"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="deleteFileFromHidden"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="previewFileFromHidden">
+		<parameter name="file_name" value="chapterModel.doc"></parameter>
+		<parameter name="file_format" value=".doc"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="previewFileFromHidden"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="renameFileFromHidden">
+		<parameter name="old_file_name" value="chapterModel_two.doc"></parameter>
+		<parameter name="new_file_name" value="chapterModel_2.doc"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="renameFileFromHidden"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="copyToFileFromHidden">
+		<parameter name="file_name" value="chapterModel.doc"></parameter>
+		<parameter name="filedir" value="Test"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="copyToFileFromHidden"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="moveToFileFromHidden">
+		<parameter name="file_name" value="questionModel.doc"></parameter>
+		<parameter name="filedir" value="Test"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="moveToFileFromHidden"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="markFileFromHidden">
+		<parameter name="file_name" value="chapterModel.doc"></parameter>
+		<parameter name="mark_name" value="testmask"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyFileTest">
+				<methods>
+					<include name="markFileFromHidden"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<!-- <test name="editFileFromHidden"> <parameter name="file_name" value="chapterModel.doc"></parameter> 
+		<parameter name="file_url" value="F:\\WebAutomation\\chapterModel.doc"></parameter> 
+		<classes> <class name="com.yoya.test.yun.MyYunMyFileTest"> <methods> <include 
+		name="editFileFromHidden"></include> </methods> </class> </classes> </test> -->
+
+
+
+
+	<!-- 以下是我的素材 -->
+
+	<test name="downloadSC">
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<parameter name="file_directory" value="道具"></parameter>
+					<parameter name="file_name" value="download.png"></parameter>
+					<include name="downloadSC"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+	<test name="deleteSC">
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<parameter name="file_directory" value="道具"></parameter>
+					<parameter name="file_name" value="delete.jpg"></parameter>
+					<include name="deleteSC"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="previewSC">
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<parameter name="file_directory" value="道具"></parameter>
+					<parameter name="file_name" value="preview.png"></parameter>
+					<include name="previewSC"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="renameSC">
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<parameter name="file_directory" value="道具"></parameter>
+					<parameter name="file_name" value="rename.png"></parameter>
+					<parameter name="new_scname" value="newname.png"></parameter>
+					<include name="renameSC"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+	<test name="remarkSC">
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<parameter name="file_directory" value="道具"></parameter>
+
+					<parameter name="file_name" value="remark.png"></parameter>
+					<include name="remarkSC"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<!-- 断言几个素材文件夹的存在性 -->
+	<test name="assertFileDir1">
+		<parameter name="file_names" value="道具,表情,音效,视频,背景音乐,场景"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<include name="assertFileDir"></include>
+				</methods>
+			</class>
+		</classes>
+
+	</test>
+
+	<test name="uploadMaterial">
+		<parameter name="file_name" value="道具"></parameter>
+		<parameter name="material_url" value="F:\\WebAutomation\\race_car.jpg"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<include name="uploadMaterial"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+<!-- 	<test name="uploadMaterialWithIllegalFormat">
+		<parameter name="file_name" value="道具"></parameter>
+		<parameter name="material_url_illegal_format" value="F:\\WebAutomation\\chapterModel.doc"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<include name="uploadMaterialWithIllegalFormat"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+<!-- 	<test name="uploadWithoutFile">
+		<parameter name="file_name" value="道具"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyMaterialTest">
+				<methods>
+					<include name="uploadWithoutFile"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+<!-- 以下是互动电影 -->
+
+	<!-- <test name="deleteMovie">
+		<parameter name="movie_name" value="MovieForDelete"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="deleteMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="shareMovie">
+		<parameter name="movie_name" value="MovieForShare"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="shareMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="editMovie">
+		<parameter name="movie_name" value="MovieForEdit"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="editMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="renameMovie">
+		<parameter name="old_movie_name" value="movieRename"></parameter>
+		<parameter name="new_movie_name" value="movie"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="renameMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="copyIntMovie">
+		<parameter name="movie_name" value="MovieForCopy"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="copyMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="markInteractiveMovie">
+		<parameter name="movie_name" value="MovieForMark"></parameter>
+		<parameter name="mark_name" value="testmak"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="markInteractiveMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+	
+	<!-- export_way："导出播放文件","导出播放代码","导出图片漫画","导出文本文档"
+	分别对应到 export_code: 1,2,3,4 -->
+<!-- 	<test name="exportMovie">
+		<parameter name="movie_name" value="MovieForExport"></parameter>
+		<parameter name="export_way" value="导出播放代码"></parameter>
+		<parameter name="export_code" value="2"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="exportMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="copyMovieToOrg">
+		<parameter name="movie_name" value="MovieForCopyTo"></parameter>
+		<parameter name="org_name" value="用户学院"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="copyMovieToOrg"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	--> 
+
+	<!-- 以下是赛事作品-->
+<!-- 	<test name="playWork">
+		<parameter name="user_name" value="liuhx"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="work_name" value=""></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyWorkTest">
+				<methods>
+					<include name="playWork"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="editWork">
+		<parameter name="user_name" value=""></parameter>
+		<parameter name="pass_word" value=""></parameter>
+		<parameter name="work_name" value=""></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyWorkTest">
+				<methods>
+					<include name="editWork"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="markWork">
+		<parameter name="user_name" value=""></parameter>
+		<parameter name="pass_word" value=""></parameter>
+		<parameter name="work_name" value=""></parameter>
+		<parameter name="mark_name" value=""></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyWorkTest">
+				<methods>
+					<include name="markWork"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+<!-- 	<test name="copyWorkToRoot">
+		<parameter name="work_name" value=""></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyWorkTest">
+				<methods>
+					<include name="copyWorkToRoot"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+<!-- 	<test name="copyWorkToClassify">
+		<parameter name="work_name" value=""></parameter>
+		<parameter name="classify" value=""></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunInteractiveMovieTest">
+				<methods>
+					<include name="copyWorkToClassify"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+
+	<!-- 以下是我的分享-->
+	<test name="copyMovieRef">
+		<parameter name="movie_name" value="testShareMovie"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyShareTest">
+				<methods>
+					<include name="copyMovieRef"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="markMovie">
+		<parameter name="movie_name" value="testShareMovie"></parameter>
+		<parameter name="mark_name" value="testmark"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyShareTest">
+				<methods>
+					<include name="markMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="showcodeMovie">
+		<parameter name="movie_name" value="testShareMovie"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyShareTest">
+				<methods>
+					<include name="showcodeMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="renameShareMovie">
+		<parameter name="old_movie_name" value="renameShareMovie"></parameter>
+		<parameter name="new_movie_name" value="sharemovie"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyShareTest">
+				<methods>
+					<include name="renameMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="cancelMovie">
+		<parameter name="movie_name" value="cancelsharemovie"></parameter>
+		<classes>
+			<class name="com.yoya.test.yun.MyYunMyShareTest">
+				<methods>
+					<include name="cancelMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+
+	<!-- 以下是回收站 -->
+
+	<test name="restoreFile">
+		<parameter name="file_name" value="Recover1"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.yun.MyYunRecycleTest">
+				<methods>
+					<include name="restoreFile"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="deleteFile">
+		<parameter name="file_name" value="Recycle1"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.yun.MyYunRecycleTest">
+				<methods>
+					<include name="deleteFile"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="clearAll">
+		<classes>
+			<class name="com.yoya.test.yun.MyYunRecycleTest">
+				<methods>
+					<include name="clearAll"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>

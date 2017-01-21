@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="feedback">
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	<!-- 意见反馈 -->
+	<test name="postAdvice">
+		<classes>
+			<class name="com.yoya.test.feedback.OptionFeedbackTest">
+				<methods>
+					<parameter name="product_type" value="互动电影项目"></parameter>
+					<parameter name="fb_type" value="互动电影建议"></parameter>
+					<parameter name="fb_desc" value="互动电影是一款很好的产品"></parameter>
+					<parameter name="rel_website"
+						value="http://movie.test.yoya.com/play?id=57848a88e4b0b6380e7722c500000000"></parameter>
+					<parameter name="contact" value="1210363262@qq.com"></parameter>
+					<include name="postAdvice"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="postReport">
+		<classes>
+			<class name="com.yoya.test.feedback.OptionFeedbackTest">
+				<methods>
+					<parameter name="product_type" value="优芽机构"></parameter>
+					<parameter name="report_reason" value="人身攻击或恶意骚扰"></parameter>
+					<parameter name="rp_desc" value="人身攻击或恶意骚扰"></parameter>
+					<parameter name="rp_website"
+						value="http://movie.test.yoya.com/play?id=57848a88e4b0b6380e7722c500000000"></parameter>
+					<parameter name="contact" value="1210363262@qq.com"></parameter>
+					<include name="postReport"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+
+	<!-- 我的反馈 -->
+	<test name="assertStatus">
+		<classes>
+			<class name="com.yoya.test.feedback.MyFeedbackTest">
+				<methods>
+					<parameter name="fb_desc" value="123456"></parameter>
+					<parameter name="fb_status" value="待处理"></parameter>
+					<include name="assertStatus"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="deleteFeedback">
+		<classes>
+			<class name="com.yoya.test.feedback.MyFeedbackTest">
+				<methods>
+					<parameter name="fb_desc" value="互动课堂需要改进"></parameter>
+
+					<include name="deleteFeedback"></include>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+
+
+
+</suite> <!-- Suite -->

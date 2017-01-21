@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="register" preserve-order="true">
+   
+    <!-- 手机号注册 -->
+    <test name="registerYoyaViaMobile">
+		<parameter name="user_code" value="lntest3"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="contact" value="18205990013"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerYoyaViaMobile"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+    
+    
+    <!-- 邮箱注册 -->
+  	 <test name="registerYoyaViaEmail">
+		<parameter name="user_code" value="lntest4"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="contact" value="3238089520@qq.com"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerYoyaViaEmail"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	
+	<!-- 以下是各种异常输入导致的注册失败 -->
+	 <test name="registerWithNull">
+		
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerWithNull"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	 <test name="registerWithSimplePwd">
+		<parameter name="user_code" value="A123456"></parameter>
+		<parameter name="pass_word" value="1"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerWithSimplePwd"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+     <test name="registerWithUnAvaiableContact1">
+		<parameter name="user_code" value="A123456"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="contact" value="1210363262@qq.com"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerWithUnAvaiableContact"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+    
+     
+     <test name="registerWithUnAvaiableContact3">
+		<parameter name="user_code" value="A123456"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="contact" value="1210363262qq"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerWithUnAvaiableContact"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	 <test name="registerWithUnAvaiableContact2">
+		<parameter name="user_code" value="A123456"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="contact" value="18250890422"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerWithUnAvaiableContact"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	  <test name="registerWithUnAvaiableCheckcode">
+		<parameter name="user_code" value="A123456"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="contact" value="18205990011"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerWithUnAvaiableCheckcode"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	   <test name="registerWithUnAvaiableMoblieCode">
+		<parameter name="user_code" value="A123456"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="contact" value="18205990011"></parameter>
+		<classes>
+			<class name="com.yoya.test.login.RegisterTest">	
+				<methods>
+					 <include name="registerWithUnAvaiableMoblieCode"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

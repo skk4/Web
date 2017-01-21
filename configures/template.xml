@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="template" preserve-order="true">
+	<parameter name="host_url" value="http://market.test.yoya_auto.com/doView?action=v_public_all&amp;start=template_market#1---default"></parameter>
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+   <test name="designerApply">
+		<parameter name="user_realname" value="李笑笑"></parameter>
+		<parameter name="mobile_number" value="18250890422"></parameter>
+		<parameter name="work1_url" value="http://movie.test.yoya_auto.com/s-576b4e6be4b02b2675dc902f00000000.html"></parameter>
+		<parameter name="work2_url" value="http://movie.test.yoya_auto.com/s-576b4e63e4b02b2675dc902b00000000.html"></parameter>
+		<classes>
+			<class name="com.yoya.test.template.TemplateMarketTest">	
+				<methods>
+					 <include name="designerApply"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  
+    
+   <!-- 模板市场 -->
+     <test name="previewTemplate">
+		<parameter name="template_type" value="宣传"></parameter>
+		<parameter name="free_type" value="免费模板"></parameter>
+		<parameter name="movie_title" value="12"></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.template.TemplateMarketTest">	
+				<methods>
+					 <include name="previewTemplate"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+    
+    
+    <test name="buyTemplateMovie">
+		<parameter name="template_type" value="宣传"></parameter>
+		<parameter name="free_type" value="免费模板"></parameter>
+		<parameter name="movie_title" value="零零七"></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.template.TemplateMarketTest">	
+				<methods>
+					 <include name="buyTemplateMovie"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  
+	
+ 
+	
+	<test name="searchTemplate">
+		<parameter name="search_key" value="17"></parameter>
+		<parameter name="results_num" value="9"></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.template.TemplateMarketTest">	
+				<methods>
+					 <include name="searchTemplate"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	
+	<test name="buyTemplateMovieNoFree">
+		<parameter name="template_type" value="宣传"></parameter>
+		<parameter name="free_type" value="收费模板"></parameter>
+		<parameter name="movie_title" value="想想明白"></parameter>
+		<parameter name="pay_type" value="支付宝"></parameter>
+		<parameter name="pay_username" value="1210363262@qq.com"></parameter>
+		<parameter name="pay_password" value="123456"></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.template.TemplateMarketTest">	
+				<methods>
+					 <include name="buyTemplateMovieNoFree"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	
+	<!-- 已购买的模板 
+		模板电影的名字可以由模板市场直接提供，不需要另外去创建
+	-->
+	<test name="previewTemp">
+		<parameter name="host_url" value="http://test.yoya.com/"></parameter>
+		<parameter name="template_name" value=""></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.template.BuyedTemplateTest">	
+				<methods>
+					 <include name="previewTemp"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="createTemp">
+		<parameter name="host_url" value="http://test.yoya.com/"></parameter>
+		<parameter name="template_name" value=""></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.template.BuyedTemplateTest">	
+				<methods>
+					 <include name="createTemp"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	
+</suite>

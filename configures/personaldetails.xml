@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="personaldetails" preserve-order="true"  >
+	
+	<!-- 更新基本资料 -->
+	<test name="basicInformationUpdate">
+  		<parameter name="user_name" value="xsjtest23"></parameter>
+  		<parameter name="pass_word" value="123456"></parameter>		
+  		<parameter name="img_url" value="F:\\图片素材\\yoya.jpg"></parameter>
+  		<parameter name="nick_name" value="ceshi"></parameter>
+  		<parameter name="real_name" value="linan"></parameter>
+  		<parameter name="specific_skills" value="特殊技能"></parameter>
+  		<parameter name="user_desc" value="用户描述"></parameter>
+		<classes>
+			<class name="com.yoya.test.accountset.PersonalDetailsTest">
+				<methods>
+					<include name="updateBasicInformation"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test>
+	
+	<!-- 基本资料页面的修改密码 -->
+	
+ 	<test name="modifypassword">
+	    <parameter name="user_name" value="xsjtest22"></parameter>
+  		<parameter name="pass_word" value="123456"></parameter>
+  		<parameter name="old_p" value="123456"></parameter>		
+		<parameter name="new_p" value="654321"></parameter> 
+		<classes>
+			<class name="com.yoya.test.accountset.PersonalDetailsTest">
+				<methods>
+					<include name="modifyPassword"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test>
+
+	
+	
+
+</suite>

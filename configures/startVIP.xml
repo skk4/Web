@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="vip" preserve-order="true">
+
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+
+
+	<test name="startvip1">
+		<!-- ygvip,jgvip,zyvip -->
+		<parameter name="vip_type" value="ygvip"></parameter>
+		<!-- 1,3,12 months -->
+		<parameter name="vip_time" value="1"></parameter>
+		<!-- alipay,wxpay -->
+		<parameter name="pay_type" value="alipay"></parameter>
+		<classes>
+			<class name="com.yoya.test.StartMyVIPTest">
+				<methods>
+					<include name="startVIP"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="startvip2">
+		<!-- ygvip,jgvip,zyvip -->
+		<parameter name="vip_type" value="jgvip"></parameter>
+		<!-- 1,3,12 months -->
+		<parameter name="vip_time" value="3"></parameter>
+		<!-- alipay,wxpay -->
+		<parameter name="pay_type" value="alipay"></parameter>
+		<classes>
+			<class name="com.yoya.test.StartMyVIPTest">
+				<methods>
+					<include name="startVIP"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="startvip3">
+		<!-- ygvip,jgvip,zyvip -->
+		<parameter name="vip_type" value="zyvip"></parameter>
+		<!-- 1,3,12 months -->
+		<parameter name="vip_time" value="12"></parameter>
+		<!-- alipay,wxpay -->
+		<parameter name="pay_type" value="alipay"></parameter>
+		<classes>
+			<class name="com.yoya.test.StartMyVIPTest">
+				<methods>
+					<include name="startVIP"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="startMyvip1">
+		<!-- ygvip,jgvip,zyvip -->
+		<parameter name="vip_type" value="ygvip"></parameter>
+		<!-- 1,3,12 months -->
+		<parameter name="vip_time" value="1"></parameter>
+		<!-- alipay,wxpay -->
+		<parameter name="pay_type" value="wxpay"></parameter>
+		<classes>
+			<class name="com.yoya.test.StartMyVIPTest">
+				<methods>
+					<include name="startMyVIP"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="startMyvip2">
+		<!-- ygvip,jgvip,zyvip -->
+		<parameter name="vip_type" value="jgvip"></parameter>
+		<!-- 1,3,12 months -->
+		<parameter name="vip_time" value="3"></parameter>
+		<!-- alipay,wxpay -->
+		<parameter name="pay_type" value="wxpay"></parameter>
+		<classes>
+			<class name="com.yoya.test.StartMyVIPTest">
+				<methods>
+					<include name="startMyVIP"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="startMyvip3">
+		<!-- ygvip,jgvip,zyvip -->
+		<parameter name="vip_type" value="zyvip"></parameter>
+		<!-- 1,3,12 months -->
+		<parameter name="vip_time" value="12"></parameter>
+		<!-- alipay,wxpay -->
+		<parameter name="pay_type" value="wxpay"></parameter>
+		<classes>
+			<class name="com.yoya.test.StartMyVIPTest">
+				<methods>
+					<include name="startMyVIP"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+</suite> 

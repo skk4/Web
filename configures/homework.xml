@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" preserve-order="true">
+	
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+   <test name="createdClasshomeworkDL">
+  
+  	<parameter name="class_name" value="homework"></parameter>
+  	<parameter name="homework_title" value="导入的作业"></parameter>
+  	<parameter name="word_url" value="F:\\WebAutomation\\word_model.doc"></parameter>
+  	<parameter name="word_name" value="word_model.doc"></parameter>
+    <classes>
+      <class name="com.yoya.test.classes.HomeworkTest">
+      	<methods>
+      		<include name="createdClasshomeworkDL"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+ <test name="createdClasshomeworkTPZY">
+  
+  	<parameter name="class_name" value="homework"></parameter>
+  	<parameter name="homework_title" value="图片作业"></parameter>
+  	<parameter name="picture_url" value="F:\\图片素材\\yoya.jpg"></parameter>
+ 
+    <classes>
+      <class name="com.yoya.test.classes.HomeworkTest">
+      	<methods>
+      		<include name="createdClasshomeworkTPZY"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name="createdClasshomeworkSJCT">
+  	<parameter name="class_name" value="homework"></parameter>
+  	<parameter name="homework_title" value="随机抽题作业"></parameter>
+  	<parameter name="tk_name" value="互动课堂"></parameter>
+  	<parameter name="chapter_name" value="第一章"></parameter>
+  	<parameter name="section_name" value="第一节"></parameter>
+ 	<parameter name="knowledge" value="综合知识点"></parameter>
+ 	<parameter name="number" value="3"></parameter>
+    <classes>
+      <class name="com.yoya.test.classes.HomeworkTest">
+      	<methods>
+      		<include name="createdClasshomeworkSJCT"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  
+  
+  
+</suite> <!-- Suite -->

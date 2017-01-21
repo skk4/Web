@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mycourse" parallel="false" preserve-order="true" allow-return-values="true">
+
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+
+	<!-- 开始学习 -->
+   <test name="startlearningTest">
+  	<parameter name="course_title" value="翻转课堂"></parameter>
+    <classes>
+      <class name="com.yoya.test.MyCourseTest">
+      		<methods>
+      			<include name="startLearning"></include>
+      		</methods>
+      </class>
+    </classes>
+  </test> 
+  
+  
+  <!-- 清理并恢复-->
+   <test name="cleanAndRecoverTest">
+  	<parameter name="course_title" value="微课"></parameter>
+    <classes>
+      <class name="com.yoya.test.MyCourseTest">
+      		<methods>
+      			<include name="cleanAndRecoverCourse"></include>
+      		</methods>
+      </class>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->

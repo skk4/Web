@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="teacherdetail" preserve-order="true">
+    <parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+  <test name="improveTeacherInfo">
+    <classes>
+      
+      <class name="com.yoya.test.accountset.TeacherProfileTest">
+     	   <methods>
+     	       <parameter name="head_img_url" value="F:\\WebAutomation\\race_car.jpg"></parameter>
+     	       <parameter name="real_name" value="李小琳"></parameter>
+     	       <parameter name="user_id" value="350322199010101212"></parameter>
+     	       <parameter name="tel_no" value="18205990013"></parameter>
+     	       <parameter name="tea_desc" value="123456789"></parameter>
+     	       
+     	       <parameter name="tea_company" value="yoya"></parameter>
+     	       <parameter name="province" value="福建省"></parameter>
+     	        <parameter name="city" value="厦门市"></parameter>
+     	         <parameter name="course_type" value="小学音乐"></parameter>
+     	          <parameter name="tea_position" value="小学教师"></parameter>
+     	           <parameter name="pos_cert_url" value="F:\\WebAutomation\\1.jpg"></parameter>
+     	           <parameter name="capa_url" value="F:\\WebAutomation\\2.png"></parameter>
+     	       <include name="improveTeacherInfo"></include>
+     	   </methods>  
+     </class>
+    </classes>
+  </test> <!-- Test -->
+  
+
+  
+</suite> <!-- Suite -->

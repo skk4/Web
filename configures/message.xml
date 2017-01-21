@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+    <parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+ <test name="setReadedStatus">
+    <classes>
+      <class name="com.yoya.test.message.SystemMessageTest">
+     	   <methods>
+     	   
+     	       <include name="setReadedStatus"></include>
+     	   </methods>  
+          
+     </class>
+    </classes>
+  </test>  
+  
+<test name="deleteMessage">
+    <classes>
+      <class name="com.yoya.test.message.SystemMessageTest">
+     	   <methods>
+     	   
+     	       <include name="deleteMessage"></include>
+     	   </methods>  
+          
+     </class>
+    </classes>
+  </test>
+  
+
+	<test name="readNotice">
+    <classes>
+      <class name="com.yoya.test.message.NoticeTest">
+     	   <methods>
+     	   
+     	       <include name="readNotice"></include>
+     	   </methods>  
+          
+     </class>
+    </classes>
+  </test>
+
+
+
+
+  
+</suite> <!-- Suite -->

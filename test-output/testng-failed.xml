@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [teacherdetail]">
+  <parameter name="web_driver" value="Firefox"/>
+  <parameter name="host_url" value="http://test.yoya.com/"/>
+  <parameter name="user_name" value="lntest2"/>
+  <parameter name="pass_word" value="123456"/>
+  <test name="improveTeacherInfo(failed)">
+    <classes>
+      <class name="com.yoya.test.accountset.TeacherProfileTest">
+        <parameter name="city" value="厦门市"/>
+        <parameter name="real_name" value="李小琳"/>
+        <parameter name="capa_url" value="F:\\WebAutomation\\2.png"/>
+        <parameter name="tea_desc" value="123456789"/>
+        <parameter name="tea_company" value="yoya"/>
+        <parameter name="course_type" value="小学音乐"/>
+        <parameter name="province" value="福建省"/>
+        <parameter name="user_id" value="350322199010101212"/>
+        <parameter name="tel_no" value="18205990013"/>
+        <parameter name="pos_cert_url" value="F:\\WebAutomation\\1.jpg"/>
+        <parameter name="tea_position" value="小学教师"/>
+        <parameter name="head_img_url" value="F:\\WebAutomation\\race_car.jpg"/>
+        <methods>
+          <include name="improveTeacherInfo" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.yoya.test.accountset.TeacherProfileTest -->
+    </classes>
+  </test> <!-- improveTeacherInfo(failed) -->
+</suite> <!-- Failed suite [teacherdetail] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [desiger]">
+  <parameter name="web_driver" value="Firefox"/>
+  <parameter name="host_url" value="http://test.yoya.com/"/>
+  <parameter name="user_name" value="lntest1"/>
+  <parameter name="pass_word" value="123456"/>
+  <test name="editTemplate(failed)">
+    <classes>
+      <class name="com.yoya.test.designer.SalesTemplateTest">
+        <parameter name="t_price" value="￥2.00"/>
+        <parameter name="template_name" value="电影模板"/>
+        <methods>
+          <include name="beforeTest"/>
+          <include name="editTemplate" invocation-numbers="0"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.yoya.test.designer.SalesTemplateTest -->
+    </classes>
+  </test> <!-- editTemplate(failed) -->
+</suite> <!-- Failed suite [desiger] -->

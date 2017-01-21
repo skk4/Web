@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="order" preserve-order="true">
+	
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	
+
+	
+	<!-- 可以通过数据库恢复的机制实现订单号的恢复 --> 
+	<test name="orderDetails">
+		<parameter name="order_id" value="1606261414150887957062276"></parameter>
+		<classes>
+			<class name="com.yoya.test.MyOrderTest">
+				<methods>
+					<include name="orderDetails"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	<test name="deleteOrder">
+		<parameter name="order_id" value="1607291344440531257062276"></parameter>
+		<classes>
+			<class name="com.yoya.test.MyOrderTest">
+				<methods>
+					<include name="deleteOrder"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	
+<!-- 	<test name="cancelOrder">
+		<parameter name="order_id" value="1608221032458154857062276"></parameter>
+		<classes>
+			<class name="com.yoya.test.MyOrderTest">
+				<methods>
+					<include name="cancelOrder"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	<test name="payOrder">
+		<parameter name="order_id" value="1608251129319372957062276"></parameter>
+		<classes>
+			<class name="com.yoya.test.MyOrderTest">
+				<methods>
+					<include name="payOrder"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test> -->
+	
+	<!-- 申请发票 -->
+	<test name="applyReceipt">
+	    <parameter name="user_name" value="liuhx"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="order_id" value="1604111019444271255345FCE"></parameter>
+		<classes>
+			<class name="com.yoya.test.receipt.ReceiptApplyTest">
+				<methods>
+					<include name="applyReceipt"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	<!-- 多张订单合并发票 -->
+	<test name="applyMultiReceipts">
+	    <parameter name="user_name" value="liuhx"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="order_id1" value="1604111007161055455345FCE"></parameter>
+		<parameter name="order_id2" value="1604110933394559755345FCE"></parameter>
+		<classes>
+			<class name="com.yoya.test.receipt.ReceiptApplyTest">
+				<methods>
+					<include name="applyMultiReceipts"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	
+	<test name="viewApply">
+	    <parameter name="user_name" value="liuhx"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="apply_id" value="16080111205855345fce"></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.receipt.ReceiptApplyTest">
+				<methods>
+					<include name="viewApply"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+	<test name="cancelApply">
+	    <parameter name="user_name" value="liuhx"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="apply_id" value="16082910324155345fce"></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.receipt.ReceiptApplyTest">
+				<methods>
+					<include name="cancelApply"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	
+</suite> <!-- Suite -->

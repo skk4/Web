@@ -1,0 +1,275 @@
+<html>
+<head>
+<title>TestNG:  myyoyatest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>myyoyatest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 15 16:31:48 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>137 seconds (137364 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.hddyElementsExist()'><b>hddyElementsExist</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 互动电影, 新建, 全部, 未分组, [分组管理]</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;wgt-uc-company&apos;]/div[@class=&apos;page-header&apos;]/div[@class=&apos;title&apos;]&quot;}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E2RVPM6&apos;, ip: &apos;192.168.248.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2136947c-acc3-4648-9901-baf2c1bc6514
+*** Element info: {Using=xpath, value=//div[@class=&apos;wgt-uc-company&apos;]/div[@class=&apos;page-header&apos;]/div[@class=&apos;title&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.yoya.test.MyYoyaTest.hddyElementsExist(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;wgt-uc-company&apos;]/div[@class=&apos;page-header&apos;]/div[@class=&apos;title&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E2RVPM6&apos;, ip: &apos;192.168.248.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1138697171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1138697171'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;wgt-uc-company&apos;]/div[@class=&apos;page-header&apos;]/div[@class=&apos;title&apos;]&quot;}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E2RVPM6&apos;, ip: &apos;192.168.248.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2136947c-acc3-4648-9901-baf2c1bc6514
+*** Element info: {Using=xpath, value=//div[@class=&apos;wgt-uc-company&apos;]/div[@class=&apos;page-header&apos;]/div[@class=&apos;title&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.yoya.test.MyYoyaTest.hddyElementsExist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;wgt-uc-company&apos;]/div[@class=&apos;page-header&apos;]/div[@class=&apos;title&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E2RVPM6&apos;, ip: &apos;192.168.248.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous3519633336419805465webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+</pre></div></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.aboutYoya()'><b>aboutYoya</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 关于优芽, 媒体报道, 关于我们, 加入我们</td>
+<td></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.coroperation()'><b>coroperation</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 合作加盟, 渠道合作, 机构入驻, 开放接口</td>
+<td></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.customService()'><b>customService</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 客服服务, 在线客服, 4008-116-309, service@yoya.com</td>
+<td></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.helpCenter()'><b>helpCenter</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 帮助中心, 常见问题, 意见反馈, 服务条款</td>
+<td></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.itemListVerify()'><b>itemListVerify</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 互动电影：, 我的机构：, 课程班：, 我的收藏：</td>
+<td></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.joinWechat()'><b>joinWechat</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 关注微信</td>
+<td></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.kcbElementsExist()'><b>kcbElementsExist</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 课程班, 我的课程班, 加入, 加入的课程班, 创建的课程班</td>
+<td></td>
+<td>5</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.logoVerify()'><b>logoVerify</b><br>Test class: com.yoya.test.MyYoyaTest</td>
+<td></td>
+<td>5</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.menuSiteVerify()'><b>menuSiteVerify</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 首页, 互动电影, 优芽赛事, 优芽机构</td>
+<td></td>
+<td>5</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.menuUserHelpVerify()'><b>menuUserHelpVerify</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 帮助, 在线客服, 帮助中心, 意见反馈</td>
+<td></td>
+<td>11</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.menuUserMessageVerify()'><b>menuUserMessageVerify</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 消息</td>
+<td></td>
+<td>2</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.menuUserVerify()'><b>menuUserVerify</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 我的优芽, 我要开课, 账户设置, 我的收藏, 我的反馈, 退出登录</td>
+<td></td>
+<td>4</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.myVIP()'><b>myVIP</b><br>Test class: com.yoya.test.MyYoyaTest</td>
+<td></td>
+<td>6</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.my_course()'><b>my_course</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 我的课程, 历史</td>
+<td></td>
+<td>5</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.stkElementsExist()'><b>stkElementsExist</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 试题库, 我的题库, 新建, 回收站, 全部, 其他来源, 未分类, [分类管理]</td>
+<td></td>
+<td>9</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.userInfoVerify()'><b>userInfoVerify</b><br>Test class: com.yoya.test.MyYoyaTest</td>
+<td></td>
+<td>5</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.wdddElementsExist()'><b>wdddElementsExist</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 我的订单, 我要开票, 全部订单, 待付款, 已付款, 已关闭</td>
+<td></td>
+<td>8</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.wdjgElementsExist()'><b>wdjgElementsExist</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 我的机构, 加入</td>
+<td></td>
+<td>8</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.wdypElementsExist()'><b>wdypElementsExist</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 我的云盘</td>
+<td></td>
+<td>5</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+<tr>
+<td title='com.yoya.test.MyYoyaTest.websiteFooter()'><b>websiteFooter</b><br>Test class: com.yoya.test.MyYoyaTest<br>Parameters: 闽ICP备10201283号, COPYRIGHT ?, 版权所有, 2015, 优芽网YOYA.COM, 厦门市思明区莲前西路595-597号益马国际大厦二楼</td>
+<td></td>
+<td>0</td>
+<td>com.yoya.test.MyYoyaTest@6ad5c04e</td></tr>
+</table><p>
+</body>
+</html>

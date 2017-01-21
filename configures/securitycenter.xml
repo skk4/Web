@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="securitycenter_suite" preserve-order="true">
+	
+	<parameter name="user_name" value="lntest2"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+   <test name="nullEmailUrlBinding">
+		<parameter name="email_url" value=""></parameter>
+		<classes>
+			<class name="com.yoya.test.accountset.SecurityCenterTest">	
+				<methods>
+					 <include name="nullEmailUrlBinding"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+
+<test name="wrongEmailUrlBinding">
+		<parameter name="email_url" value="123@qq"></parameter>
+		<classes>
+			<class name="com.yoya.test.accountset.SecurityCenterTest">	
+				<methods>
+					 <include name="wrongEmailUrlBinding"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+ <test name="emailUrlDuplicateBinding">
+		<parameter name="email_url" value="1210363262@qq.com"></parameter>
+		<classes>
+			<class name="com.yoya.test.accountset.SecurityCenterTest">	
+				<methods>
+					 <include name="emailUrlDuplicateBinding"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  
+	
+	<test name="emailUrlBinding">
+		<parameter name="email_url" value="759474987@qq.com"></parameter>
+		<classes>
+			<class name="com.yoya.test.accountset.SecurityCenterTest">	
+				<methods>
+					 <include name="emailUrlBinding"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+
+	<test name="mobileBinding">
+		<parameter name="mobile_number" value="18205990012"></parameter> 
+		<classes>
+			<class name="com.yoya.test.accountset.SecurityCenterTest">
+				<methods>
+					<include name="mobileBinding"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test>
+	
+	
+	<test name="realNameAuthentication">
+		<parameter name="user_realname" value="李笑"></parameter>
+		<parameter name="card_type" value="idcard"></parameter> 
+		<parameter name="card_number" value="350322199010011551"></parameter>
+		<parameter name="frontpic_url" value="F:\WebAutomation\1.jpg"></parameter>
+		<parameter name="backpic_url" value="F:\WebAutomation\2.png"></parameter>
+		<classes>
+			<class name="com.yoya.test.accountset.SecurityCenterTest">
+				<methods>
+					<include name="realNameAuthentication"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test>
+		
+	
+	<test name="modifyPasswordFromSecurity">
+ 	    <parameter name="user_name" value="xiesj2"></parameter>
+  		<parameter name="pass_word" value="123456"></parameter>
+  		<parameter name="old_p" value="123456"></parameter>		
+		<parameter name="new_p" value="654321"></parameter> 
+		<classes>
+			<class name="com.yoya.test.accountset.SecurityCenterTest">
+				<methods>
+					<include name="modifyPasswordFromSecurity"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test>
+	
+	
+
+</suite>

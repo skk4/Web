@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="kcb" preserve-order="true" >
+	
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+		
+ 	<test name="createClassRoom">
+		<parameter name="class_name" value="newclass"></parameter>
+		<classes>
+			<class name="com.yoya.test.KCBTest">
+				<methods>
+					<include name="createClassRoom"></include>
+				</methods>
+			</class>	
+		</classes>	
+	</test>  
+
+<!-- 编辑班级名字 -->
+ 	<test name="editclass">
+		<parameter name="class_name" value="classnameforedit"></parameter>
+		<parameter name="new_class_name" value="aftereditedclass"></parameter>
+		<classes>
+			<class name="com.yoya.test.KCBTest">
+				<methods>
+					<include name="editClass"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test>   
+	
+	<!-- 删除课程班 -->
+	
+ 	<test name="removeClassRoom">
+		<parameter name="class_name" value="classfordelete"></parameter>
+		<classes>
+			<class name="com.yoya.test.KCBTest">
+				<methods>
+					<include name="removeClassRoom"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test> 
+	
+	
+	<!-- 加入成员 -->
+  	<test name="joinClassRoom">
+ 	<parameter name="class_name" value="classforjoinremember"></parameter>
+		
+		<classes>
+			<class name="com.yoya.test.KCBTest">
+				<methods>
+					<include name="joinClassRoom"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test> 
+	
+	
+	<!-- 移除成员 -->
+	<test name="removeRememberFromClass">
+		<parameter name="class_name" value="removeremember"></parameter>
+		<parameter name="login_name" value="lntest1"></parameter>
+		<classes>
+			<class name="com.yoya.test.KCBTest">
+				<methods>
+					<include name="removeRememberFromClass"></include>
+				</methods>
+			</class>	
+		</classes>
+		
+	</test>  
+
+</suite>

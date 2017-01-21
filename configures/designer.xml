@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="desiger">
+    <parameter name="user_name" value="lailw"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+	
+ 	 <test name="offlineProduct">
+	    <classes>
+	        <class name="com.yoya.test.designer.SalesTemplateTest">
+	            <methods>
+	                <parameter name="template_name" value="电影模板"></parameter>
+	                <include name="offlineProduct"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test> 
+	
+	<test name="onlineProduct">
+	    <classes>
+	        <class name="com.yoya.test.designer.SalesTemplateTest">
+	            <methods>
+	                <parameter name="template_name" value="电影模板"></parameter>
+	                <include name="onlineProduct"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test> 
+	
+	<test name="viewTemplate">
+	    <classes>
+	        <class name="com.yoya.test.designer.SalesTemplateTest">
+	            <methods>
+	                <parameter name="template_name" value="电影模板"></parameter>
+	                <parameter name="t_status" value="上架"></parameter>
+	                <parameter name="t_type" value="教育>学前教育"></parameter>
+	                <parameter name="t_price" value="￥0.00"></parameter>
+	                <include name="viewTemplate"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test>
+	
+	
+	<test name="editTemplate">
+	    <classes>
+	        <class name="com.yoya.test.designer.SalesTemplateTest">
+	            <methods>
+	                <parameter name="template_name" value="电影模板"></parameter>      
+	                <parameter name="t_price" value="2.00"></parameter>
+	                <include name="editTemplate"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test>
+	 
+	 
+<test name="orderDetails">
+	    <classes>
+	        <class name="com.yoya.test.designer.MyOrderTest">
+	            <methods>
+	                <parameter name="order_type" value="待付款"></parameter>
+	                <parameter name="order_id" value="16072411385979910577B4E94"></parameter>      
+	                <parameter name="product_name" value="未命名(2)"></parameter>
+	                <parameter name="pay_money" value="0.03"></parameter>
+	                <parameter name="order_status" value="待支付"></parameter>
+	                <include name="orderDetails"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test>
+    
+    
+    <test name="viewBalance">
+	    <classes>
+	        <class name="com.yoya.test.designer.BalanceManagementTest">
+	            <methods>
+	                <parameter name="bill_id" value="B16063000000005"></parameter>
+	                <parameter name="bill_status" value="已结"></parameter>      
+	                <parameter name="user_code" value="lailw"></parameter>
+	                <parameter name="bill_money" value="￥0.01"></parameter>
+	                <parameter name="deduct" value="￥0.01"></parameter>
+	                <parameter name="tax" value="￥0"></parameter>
+	                <parameter name="settle_money" value="￥0"></parameter>	      
+	                <include name="viewBalance"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test>
+	
+    
+     <test name="exportBill">
+	    <classes>
+	        <class name="com.yoya.test.designer.BalanceManagementTest">
+	            <methods>
+	                <parameter name="bill_id" value="B16063000000005"></parameter>
+	                
+	                <include name="exportBill"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test>
+    
+    
+    
+    <test name="applyForMoney">
+	    <classes>
+	        <class name="com.yoya.test.designer.CashierRecordTest">
+	            <methods>
+	                <parameter name="avaiable_cash" value="0.00"></parameter>
+	                 <parameter name="cash_amount" value="0.00"></parameter>
+	                 <parameter name="name" value="lailw"></parameter>
+	                 <parameter name="account_type" value="支付宝"></parameter>
+	                 <parameter name="incoming_account" value="1210363262@qq.com"></parameter>
+	                 <parameter name="login_pwd" value="123456"></parameter>
+	                <include name="applyForMoney"></include>
+	            </methods>
+	            
+	        </class>
+	    </classes>
+	    
+	</test>
+    
+</suite>

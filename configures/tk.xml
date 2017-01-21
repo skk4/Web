@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TK" preserve-order="true" allow-return-values="true">
+
+	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter>
+
+	<!-- 添加第一章 -->
+<!-- 	<test name="addfirstchapter">
+		<parameter name="tk_name" value="第一章题库"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="addFirstChapter"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+	<!-- 添加第一节,前提第一章默认存在 -->
+	<test name="addOneSection">
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="addOneSection"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+<!-- 	<test name="addonechapter">
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="old_chapter_name" value="第一章"></parameter>
+		<parameter name="one_chapter_name" value="第二章"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="addOneChapter"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="addNextSection">
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="old_chapter_name" value="第三章"></parameter>
+		<parameter name="old_section_name" value="第一节"></parameter>
+		<parameter name="next_section_name" value="第二节"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="addNextSection"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="editSectionName">
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="chapter_name" value="第四章"></parameter>
+		<parameter name="old_section_name" value="第一节"></parameter>
+		<parameter name="new_section_name" value="第1节"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="editSectionName"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="deleteSection">
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="chapter_name" value="第五章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="deleteSection"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="deleteChapter">
+	    <parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="chapter_name" value="第六章"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="deleteChapter"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+
+<!--  	<test name="editChapter">
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="old_chapter_name" value="第7章"></parameter>
+		<parameter name="new_chapter_name" value="第七章"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="editChapter"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+
+	<!-- 导入章节 -->
+<!-- 	<test name="importChaptersLib">
+		<parameter name="tk_name" value="导入章节题库"></parameter>
+		<parameter name="file_url" value="F:\\WebAutomation\\chapterModel_two.doc"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="importChaptersLib"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+	<!-- 导入题目，指定章节 -->
+<!-- 	<test name="importQuestionsLibWithSpecifics">
+		<parameter name="tk_name" value="导入题目题库"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第二节"></parameter>
+		<parameter name="knowledge" value="综合知识点"></parameter>
+		<parameter name="questions_url" value="F:\\WebAutomation\\questionModel.doc"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="importQuestionsLibWithSpecifics"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+
+	<!-- 知识点管理 -->
+<!-- 	<test name="addKnowledge">
+
+		<parameter name="tk_name" value="知识点管理"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<parameter name="knowledge" value="知识点1"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="addKnowledge"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="editKnowledge">
+
+		<parameter name="tk_name" value="知识点管理"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<parameter name="knowledge" value="知识点22"></parameter>
+		<parameter name="new_knowledge" value="知识点2"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="editKnowledge"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="deleteKnowledge">
+
+		<parameter name="tk_name" value="知识点管理"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<parameter name="knowledge" value="知识点3"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="deleteKnowledge"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+
+	<!-- 增加题目 -->
+<!-- 	<test name="addQuestion">
+
+		<parameter name="tk_name" value="知识点管理"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<parameter name="knowledge" value="综合知识点"></parameter>
+		<parameter name="question_type" value="单选题"></parameter>
+		<parameter name="question_url" value="F:\\WebAutomation\\addSimpleChoice.txt"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="addQuestion"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+
+
+	<!-- 编辑题目 -->
+<!-- 	<test name="editQuestion">
+
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<parameter name="knowledge" value="综合知识点"></parameter>
+		<parameter name="question_type" value="单选题"></parameter>
+		<parameter name="question_title" value="电视剧《欢乐颂》中安迪的扮演者是以下哪一位"></parameter>
+		<parameter name="eidt_question_url" value="F:\\WebAutomation\\editSimpleChoice.txt"></parameter>
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="editQuestion"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+	<!-- 删除题目 -->
+<!-- 	<test name="deleteQuestion">
+
+		<parameter name="tk_name" value="测试题库"></parameter>
+		<parameter name="chapter_name" value="第一章"></parameter>
+		<parameter name="section_name" value="第一节"></parameter>
+		<parameter name="knowledge" value="综合知识点"></parameter>
+		<parameter name="question_type" value="单选题"></parameter>
+		<parameter name="question_title" value="电视剧《欢乐颂》中安迪的扮演者是以下哪一位"></parameter>
+
+		<classes>
+			<class name="com.yoya.test.classes.TKTest">
+				<methods>
+					<include name="deleteQuestion"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+</suite> 

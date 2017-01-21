@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- 该配置文件只用于辅助作用，比如测试某个配置中某个方法的时候 -->
+<suite name="Suite" >
+      <parameter name="web_driver" value="firefox"></parameter>
+     
+     <parameter name="host_url" value="http://www.yoya_auto.com/"></parameter> 
+  	<!-- 	<parameter name="user_name" value="lntest1"></parameter>
+	<parameter name="pass_word" value="123456"></parameter> -->
+
+	<test name="applyMultiReceipts">
+	    <parameter name="user_name" value="liuhx"></parameter>
+		<parameter name="pass_word" value="123456"></parameter>
+		<parameter name="order_id1" value="1604111007161055455345FCE"></parameter>
+		<parameter name="order_id2" value="1604110933394559755345FCE"></parameter>
+		<classes>
+			<class name="com.yoya.test.receipt.ReceiptApplyTest">
+				<methods>
+					<include name="applyMultiReceipts"></include>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+ 
+</suite> <!-- Suite -->

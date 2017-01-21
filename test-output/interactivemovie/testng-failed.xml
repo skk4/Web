@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [interactivemovie]">
+  <parameter name="web_driver" value="FirefoxDriver"/>
+  <parameter name="host_url" value="http://test.yoya.com/"/>
+  <parameter name="group_name" value="教育"/>
+  <parameter name="user_name" value="linantest"/>
+  <parameter name="pass_word" value="123456"/>
+  <parameter name="movie_name" value="发布电影"/>
+  <test name="groupMovie(failed)">
+    <parameter name="group_name" value="教育"/>
+    <parameter name="movie_name" value="发布电影"/>
+    <classes>
+      <class name="com.yoya.test.InteractiveMovieTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="groupMovie" invocation-numbers="0"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.yoya.test.InteractiveMovieTest -->
+    </classes>
+  </test> <!-- groupMovie(failed) -->
+</suite> <!-- Failed suite [interactivemovie] -->
